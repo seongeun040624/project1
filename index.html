@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>국방부 클론 코딩</title>
+<title> 국방부 클론코딩</title>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <meta name='Title' content='대한민국 국방부'>
-<meta name='Subject' content='국방부 클론 코딩'>
+<meta name='Subject' content='국방부 클론코딩'>
 <meta name='Keywords' content='대한민국, 국방부, 클론코딩'>
-<meta name='Author' content='seongeun'>
-<meta name='Publisher' content='seongeun'>
-<meta name='Description' content='대한민국 국방부 클론코딩 사이트입니다'>
+<meta name='Author' content='jeehyun'>
+<meta name='Publisher' content='jeehyun'>
+<meta name='Description' content='대한민국 국방부 클론코딩 사이트입니다.'>
 <meta name='Author-Date' content='2025-11-24'>
 
 <!-- 접근성 텍스트(skip) 숨김 -->
@@ -30,6 +30,7 @@
 
 <!-- 로컬 CSS -->
 <link rel='stylesheet' href='./css/style.css'/>
+<link rel='stylesheet' href='./css/style1.css'/>
 
 <!-- 로컬 js -->
 <script src='./js/script.js' defer></script>
@@ -38,87 +39,308 @@
 <body>
 <!-- 시각장애인 웹 접근성을 위한 skip _ 지우지않아도 됩니다. -->
 
-<ul id='skip'>
-   <li><a href='#header'>헤더 바로가기</a></li>
-   <li><a href='#nav'>메뉴 바로가기</a></li>
-   <li><a href='#content'>내용 바로가기</a></li>
-   <li><a href='#footer'>하단 바로가기</a></li>
-</ul>
-
-<div id="wrap">
-    <header id="header">
-        <div class="header_until">
-            <div class="inner">
-                <div class="header_util_left">
-                    <p><img src="./img/eg_logo.png" alt="태극기 로고">이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+    <ul id='skip'>
+        <li><a href='#header'>헤더 바로가기</a></li>
+        <li><a href='#nav'>메뉴 바로가기</a></li>
+        <li><a href='#content'>내용 바로가기</a></li>
+        <li><a href='#footer'>하단 바로가기</a></li>
+    </ul>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_until">
+                <div class="inner">
+                    <div class="header_util_left">
+                        <p><img src="./img/eg_logo.png" alt="태극기로고">이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+                    </div>
+                    <div class="header_util_right">
+                        <ul class="header_util_nav">
+                            <li><a href="#">전체내용</a></li>
+                            <li><a href="#">누리집 안내 </a></li>
+                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">어린이</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="header_util_right">
-                    <ul class="header_util_nav">
-                        <li><a href="#">전체내용</a></li>
-                        <li><a href="#">누리집 안내</a></li>
-                        <li><a href="#">ENGLISH</a></li>
-                        <li><a href="#">어린이</a></li>
+            </div>
+            <div class="header_bottom">
+                <div class="inner">
+                    <div class="header_logo_search">
+                        <div class="logo_search">
+                            <h1><a href="#"><img src="./img/bg_logo3.png" alt="대한민국 국방부 로고"></a></h1>
+                            <div class="header_search">
+                                <form action="#">
+                                    <label for="qt">검색</label>
+                                    <input type="search" id="qt" class="search" title="검색어를 입력해주세요">
+                                    <input type="button" value="검색">
+                                </form>
+                            </div>
+                            <div class="trending">
+                                <h3>추천검색어</h3>
+                                <ul>
+                                    <li><a href="#">메일</a></li>
+                                    <li><a href="#">군경력증명서</a></li>
+                                    <li><a href="#">예비군</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./img/img_right_01.jpg" alt="태극기 이미지">
+                        </div>
+                    </div>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#">정보공개</a>
+                                <div class="width100_bg">
+                                    <div class="inner">
+                                        <div class="leftTitle">
+                                            <h2>대한민국 국방부</h2>
+                                        </div>
+                                        <div class="subListWrap">
+                                            <ul>
+                                                <li><a href="#">정보공개제도</a></li>
+                                                <li><a href="#">사전 정보공표</a></li>
+                                                <li><a href="#">업무추진비</a></li>
+                                                <li><a href="#">정보목록</a></li>
+                                                <li><a href="#">정보공개 청구</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">정책실명제</a></li>
+                                                <li><a href="#">업무분야별 자료</a></li>
+                                                <li><a href="#">재정정보공개</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">국방 관련 국회 정보</a></li>
+                                                <li><a href="#">법령정보</a></li>
+                                                <li><a href="#">공공데이터개방</a></li>
+                                                <li><a href="#">정책연구</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="rightInfo">
+                                            <ul>
+                                                <li><a href="#">정보공개 청구</a></li>
+                                                <li><a href="#">공공데이터 개방</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">민원&middot;국민참여</a>
+                                <div class="width100_bg">
+                                    <div class="inner">
+                                        <div class="leftTitle">
+                                            <h2>대한민국 국방부</h2>
+                                        </div>
+                                        <div class="subListWrap">
+                                            <ul>
+                                                <li><a href="#">민원안내</a></li>
+                                                <li><a href="#">민원신청</a></li>
+                                                <li><a href="#">나의 민원 검색</a></li>
+                                                <li><a href="#">청탁금지법 신고 안내</a></li>
+                                                <li><a href="#">청렴포털_부패공익신고</a></li>
+                                                <li><a href="#">국방신고센터</a></li>
+                                                <li><a href="#">보조금 부정수급 신고센터</a></li>
+                                                <li><a href="#">갑질신고센터</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">청렴옴부즈만</a></li>
+                                                <li><a href="#">익명신고</a></li>
+                                                <li><a href="#">친철불친절 신고센터</a></li>
+                                                <li><a href="#">제안</a></li>
+                                                <li><a href="#">정책참여</a></li>
+                                                <li><a href="#">규제개혁</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">국방정책, 나도 한마디</a></li>
+                                                <li><a href="#">고마워요, 우리 국군</a></li>
+                                                <li><a href="#">한 번에 정보찾기</a></li>
+                                                <li><a href="#">적극행정</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="rightInfo">
+                                            <ul>
+                                                <li><a href="#">전자민원&middot;제안신청</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">국방소식</a>
+                                <div class="width100_bg">
+                                    <div class="inner">
+                                        <div class="leftTitle">
+                                            <h2>대한민국 국방부</h2>
+                                        </div>
+                                        <div class="subListWrap">
+                                            <ul>
+                                                <li><a href="#">알림</a></li>
+                                                <li><a href="#">국방뉴스</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">보도자료</a></li>
+                                                <li><a href="#">언론보도 바로보기</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">국방 콘텐츠</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="rightInfo">
+                                            <ul>
+                                                <li><a href="#">보도자료</a></li>
+                                                <li><a href="#">정책브리핑</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">국방정책</a>
+                                <div class="width100_bg">
+                                    <div class="inner">
+                                        <div class="leftTitle">
+                                            <h2>대한민국 국방부</h2>
+                                        </div>
+                                        <div class="subListWrap">
+                                            <ul>
+                                                <li><a href="#">국정과제</a></li>
+                                                <li><a href="#">6대 국방운영중점</a></li>
+                                                <li><a href="#">국방혁신 40</a></li>
+                                                <li><a href="#">국방예산</a></li>
+                                                <li><a href="#">국방경영혁신</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">한미 안보협력</a></li>
+                                                <li><a href="#">국방외교협력</a></li>
+                                                <li><a href="#">세계 속의 한국군</a></li>
+                                                <li><a href="#">군법무관 선발</a></li>
+                                                <li><a href="#">병역제도</a></li>
+                                                <li><a href="#">동원/예비군</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">장병복지증진</a></li>
+                                                <li><a href="#">국방전력발전업무</a></li>
+                                                <li><a href="#">전력지원체계</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="rightInfo">
+                                           <!--  <ul>
+                                                <li><a href="#">보도자료</a></li>
+                                                <li><a href="#">정책브리핑</a></li>
+                                            </ul> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">국방부 소개</a>
+                                <div class="width100_bg">
+                                    <div class="inner">
+                                        <div class="leftTitle">
+                                            <h2>대한민국 국방부</h2>
+                                        </div>
+                                        <div class="subListWrap">
+                                            <ul>
+                                                <li><a href="#">국방부 소개</a></li>
+                                                <li><a href="#">장관</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">차관</a></li>
+                                                <li><a href="#">조직 및 직원 안내</a></li>
+                                            </ul>
+                                             <ul>
+                                                <li><a href="#">관련기관 누리집</a></li>
+                                                <li><a href="#">찾아오시는 길</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="rightInfo">
+                                            <ul>
+                                                <li><a href="#">조직도</a></li>
+                                                <li><a href="#">찾아오시는 길</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="main_box_visual">
+            <div class="inner">
+                <div class="sliderWrap">
+                    <ul>
+                        <li><a href="#"><img src="./img/egovtemp_202511070130223350.png" alt="1"></a></li>
+                        <li><a href="#"><img src="./img/egovtemp_202511070132202540.png" alt="2"></a></li>
+                        <li><a href="#"><img src="./img/egovtemp_202511070149559930.png" alt="3"></a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-       <div class="header_bottom">
-            <div class="inner">
-                <div class="header_logo_search">
-                    <div class="logo_search">
-                        <h1><a href="#"><img src="./img/bg_logo3.png" alt="대한민국 국방부 로고"></a></h1>
-                        <div class="header_search">
-                            <form action="#">
-                                <label for="qt">검색</label>
-                                <input type="search" id="qt" class="search" title="검색어를 입력해주세요">
-                                <input type="button" value="검색">
-                            </form>
-                        </div>
-                        <div class="trending">
-                            <h3>추천검색어</h3>
+                <div class="tahWrap">
+                    <div class="tabContents">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <h3>아세안 확대 국방장관회의 계기<br> 한-호주 국방장관회담 개최</h3>
+                                    <p>안규백 국방부 장관은 11월 1일(토) 오후 말레이시아에서 개최된 
+                                        2025 아세안확대국방장관회의 참석 계기 리차드 말즈(Ric...</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <h3>아세안 확대 국방장관회의 계기<br> 한-태국 양자회담 개최</h3>
+                                    <p>안규백 국방부장관은 11월 1일 개최된 제12차 아세안 확대 
+                                        국방장관회의(ADMM-Plus) 참석 계기에 태국의 나타폰 낙파닛...</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <h3>아세안 확대 국방장관회의 계기<br> 한-말레이시아 양자회담 개최</h3>
+                                    <p>안규백 국방부장관은 11월 1일 개최된 제12차 아세안 확대 
+                                        국방장관회의(ADMM-Plus) 참석을 계기로 아세안 의장국인 말...</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs">
                             <ul>
-                                <li><a href="#">메일</a></li>
-                                <li><a href="#">군경력증명서</a></li>
-                                <li><a href="#">예비군</a></li>
+                                <li><a href="#">아세안 확대 국방장관 회의 계기 한- 호주 국방장 국방장...</a></li>
+                                <li><a href="#">아세안 확대 국방장관 회의 계기 한- 태국 양자회...</a></li>
+                                <li><a href="#">아세안 확대 국방장관 회의 계기 한- 말레이시아...</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="logo_img">
-                        <img src="./img/img_right_01.jpg" alt="태극기 이미지">
-                    </div>
                 </div>
-                <nav id="nav"></nav>
+                <div class="controlsWrap">
+                    <button class="prev"></button>
+                    <button class="play stop"></button>
+                    <button class="next"></button>
+                </div>
             </div>
-       </div>
-    </header>
-    <section class="main_box_visual">
-        <div class="inner"></div>
-    </section>
-    <section class="bn_wrap_rolling">
-        <div class="inner"></div>
-    </section>
-    <section class="box_wrap_latest">
-        <div class="inner"></div>
-    </section>
-    <section class="box_wrap_cardnews2">
-        <div class="inner"></div>
-    </section>
-    <section class="bn_wrap_banners">
-        <div class="inner"></div>
-    </section>
-    <section class="box_wrap_quick">
-        <div class="inner"></div>
-    </section>
-    <section class="box_wrap_koba">
-        <div class="inner"></div>
-    </section>
-    <section class="bn_wrap_rolling03">
-        <div class="inner"></div>
-    </section>
-    <footer id="footer">
-        <div class="inner"></div>
-    </footer>
-</div>
-
+        </section>
+        <section class="bn_wrap_rolling">
+             <div class="inner"></div>
+        </section>
+        <section class="box_wrap_latest">
+            <div class="inner"></div>
+        </section>   
+        <section class="box_wrap_cardnews2">
+            <div class="inner"></div>
+        </section>
+        <section class="bn_wrap_banners">
+            <div class="inner"></div>
+        </section>
+        <section class="box_wrap_quick">
+            <div class="inner"></div>
+        </section>
+        <section class="box_wrap_koba">
+            <div class="inner"></div>
+        </section>
+        <section class="bn_wrap_rolling03">
+            <div class="inner"></div>
+        </section>
+        <footer id="footer">
+            <div class="inner"></div>
+        </footer>
+    </div>
 </body>
 </html>
