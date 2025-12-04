@@ -24,9 +24,11 @@
 
 <!-- CSS 리셋 -->
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <!-- 제이쿼리 3.7 CDN -->
 <script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- 로컬 CSS -->
 <link rel='stylesheet' href='./css/style.css'/>
@@ -36,6 +38,7 @@
 <script src='./js/script.js' defer></script>
 <script src='./js/slider.js' defer></script>
 <script src='./js/tabs.js' defer></script>
+<!-- <script src="js/topButton.js"></script> -->
 
 </head>
 <body>
@@ -553,26 +556,29 @@
                 <div class="bn_rolling02">
                     <h4>주요정보 바로가기</h4>
                     <div class="bn_controlBtn">
-                        <div class="prev">이전</div>
+                        <div class="prev swiper-button-prev-rolling">이전</div>
                         <div class="stop">정지</div>
-                        <div class="next">다음</div>
+                        <div class="next swiper-button-next-rolling">다음</div>
                     </div>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
+                    <!-- Swiper -->
+                    <div class="swiper RollingSwiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                            <li class="swiper-slide"><a href="#"></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="bn_imgWrap">
                     <div class="box_one">
@@ -727,30 +733,30 @@
         <section class="bn_wrap_rolling03">
             <div class="inner">
                 <div class="controlBtn">
-                    <div class="prev">이전</div>
+                    <div class="prev swiper-button-prev-rolling03">이전</div>
                     <div class="stop">정지</div>
-                    <div class="next">다음</div>
+                    <div class="next swiper-button-next-rolling03">다음</div>
                     <div class="all">전체</div>
                 </div>
-                <div class="rolling_wrap">
-                    <ul>
-                        <li><a href="#"><img src="./img/banner.png" alt="배너1"></a></li>
-                        <li><a href="#"><img src="./img/banner2.png" alt="배너2"></a></li>
-                        <li><a href="#"><img src="./img/banner3.png" alt="배너3"></a></li>
-                        <li><a href="#"><img src="./img/banner4.jpg" alt="배너4"></a></li>
-                        <li><a href="#"><img src="./img/banner5.jpg" alt="배너5"></a></li>
-                        <li><a href="#"><img src="./img/banner6.gif" alt="배너6"></a></li>
-                        <li><a href="#"><img src="./img/banner7.gif" alt="배너7"></a></li>
-                        <li><a href="#"><img src="./img/banner8.png" alt="배너8"></a></li>
-                        <li><a href="#"><img src="./img/banner9.png" alt="배너9"></a></li>
-                        <li><a href="#"><img src="./img/banner10.gif" alt="배너10"></a></li>
-                        <li><a href="#"><img src="./img/banner11.gif" alt="배너11"></a></li>
-                        <li><a href="#"><img src="./img/banner12.png" alt="배너12"></a></li>
-                        <li><a href="#"><img src="./img/banner13.jpg" alt="배너13"></a></li>
-                        <li><a href="#"><img src="./img/banner14.gif" alt="배너14"></a></li>
-                        <li><a href="#"><img src="./img/banner15.png" alt="배너15"></a></li>
-                        <li><a href="#"><img src="./img/banner16.gif" alt="배너16"></a></li>
-                        <li><a href="#"><img src="./img/banner17.gif" alt="배너17"></a></li>
+                <div class="rolling_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner.png" alt="배너1"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner2.png" alt="배너2"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner3.png" alt="배너3"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner4.jpg" alt="배너4"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner5.jpg" alt="배너5"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner6.gif" alt="배너6"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner7.gif" alt="배너7"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner8.png" alt="배너8"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner9.png" alt="배너9"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner10.gif" alt="배너10"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner11.gif" alt="배너11"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner12.png" alt="배너12"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner13.jpg" alt="배너13"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner14.gif" alt="배너14"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner15.png" alt="배너15"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner16.gif" alt="배너16"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./img/banner17.gif" alt="배너17"></a></li>
                     </ul>
                 </div>
             </div>

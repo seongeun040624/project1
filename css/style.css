@@ -335,10 +335,13 @@ a{text-decoration: none; color: #333}
 }
 .sliderWrap ul li{
     position: absolute;
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity .5s;
 }
 .sliderWrap ul .active{
-    display: block;
+    /* display: block; */
+        opacity: 1;
 }
 .tabWrap{
     width: 330px;
@@ -417,21 +420,26 @@ a{text-decoration: none; color: #333}
    background: url(../img/btn_news_control_on.png) 0 0;
 }
 .controlsWrap .play{
-   background: url(../img/btn_news_control_off.png) -62px 0;
+   background: url(../img/btn_news_control_off.png) -60px 0;
 }
 .controlsWrap .play:hover{
-   background: url(../img/btn_news_control_on.png) -62px 0;
+   background: url(../img/btn_news_control_on.png) -60px 0;
 }
 .controlsWrap .stop{
-   /*  overflow: hidden;
-    background: url(../img/btn_news_control_off.png) -120px 0; */
+    overflow: hidden;
+    background: url(../img/btn_news_control_off.png) -121px 0;
+}
+.controlsWrap .stop:hover{
+    overflow: hidden;
+    background: url(../img/btn_news_control_on.png) -121px 0;
 }
 .controlsWrap .next{
-    background: url(../img/btn_news_control_off.png) -184px 0;
+    background: url(../img/btn_news_control_off.png) -182px 0;
 }
 .controlsWrap .next:hover{
-    background: url(../img/btn_news_control_on.png) -184px 0;
+    background: url(../img/btn_news_control_on.png) -182px 0;
 }
+
 
 
 .bn_wrap_rolling{
@@ -598,6 +606,10 @@ a{text-decoration: none; color: #333}
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: -5px;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .box_wrap_latest .inner .box_container article .box_desk .box_news .date{
     font-size: 14px;
@@ -626,23 +638,8 @@ a{text-decoration: none; color: #333}
     position: relative;
     overflow: hidden;
 }
-.popupImgs .imgs{
-    width: 100%;
-    height: 100%;
-}
-.popupImgs .imgs ul{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.popupImgs .imgs ul li{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: none;
-    transition: .3s;
-}
-.popupImgs .imgs ul li:first-child{display: block;}
+
+
 .popupImgs .imgs ul li a{display: block}
 .popupImgs .imgs ul li a img{
     width: 100%;
@@ -678,12 +675,16 @@ a{text-decoration: none; color: #333}
 .popup_control_wrap .controlBtn .stop{
     background-position: -41px 0;
 }
+.popup_control_wrap .controlBtn .stop.play{
+    background-position: -82px 0;
+}
 .popup_control_wrap .controlBtn .next{
     background-position: -123px 0;
 }
 .popup_control_wrap .controlBtn .all{
      background-position: -164px 0;
 }
+
 
 
 
@@ -709,6 +710,10 @@ a{text-decoration: none; color: #333}
     list-style-type: square;
     color: #fff;
     line-height: 120%;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .list_news ul li h5{}
 .list_news ul li h5 a{
@@ -842,6 +847,9 @@ a{text-decoration: none; color: #333}
 .bn_wrap_banners .bn_rolling02 .bn_controlBtn>.stop{
      background-position: -30px 0;
 }
+.bn_wrap_banners .bn_rolling02 .bn_controlBtn>.stop.play{
+     background-position: -60px 0;
+}
 .bn_wrap_banners .bn_rolling02 .bn_controlBtn>.next{
      background-position: -90px 0;
 }
@@ -849,7 +857,7 @@ a{text-decoration: none; color: #333}
 
 .bn_wrap_banners .bn_rolling02 ul{
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
 }
 .bn_wrap_banners .bn_rolling02 ul li{}
 .bn_wrap_banners .bn_rolling02 ul li a{
@@ -1157,6 +1165,7 @@ a{text-decoration: none; color: #333}
 }
 .bn_wrap_rolling03 .inner .controlBtn>div.prev{background-position: 0 0;}
 .bn_wrap_rolling03 .inner .controlBtn>div.stop{background-position: -26px 0;}
+.bn_wrap_rolling03 .inner .controlBtn>div.stop.play{background-position: -52px 0;}
 .bn_wrap_rolling03 .inner .controlBtn>div.next{background-position: -78px 0;}
 .bn_wrap_rolling03 .inner .controlBtn>div.all{
     width: 39px;
@@ -1166,9 +1175,9 @@ a{text-decoration: none; color: #333}
 .bn_wrap_rolling03 .inner .rolling_wrap ul{
     display: flex;
     width: 1070px;
-    gap: 10px;
     height: 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 }
 
 
